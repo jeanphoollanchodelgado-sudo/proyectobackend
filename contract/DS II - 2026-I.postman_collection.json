@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "ba94cad5-ac52-43df-8a0c-70045d2b5b70",
+    "name": "DS II - 2026-I",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3729740"
+  },
+  "item": [
+    {
+      "name": "apiGeneralIndex",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{urlBase}}/general/index",
+          "host": [
+            "{{urlBase}}"
+          ],
+          "path": [
+            "general",
+            "index"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "apiSuggestionInsert",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"idOffice\": \"f884319e-123d-4fd1-8e80-fd26be9101ed\",\r\n    \"personFullName\": \"Ana María Torres Sernadez\",\r\n    \"description\": \"Que el ingeniero Kevin explique más despacio.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{urlBase}}/suggestion/insert",
+          "host": [
+            "{{urlBase}}"
+          ],
+          "path": [
+            "suggestion",
+            "insert"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "urlBase",
+      "value": ""
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+insert into toffice values('f884319e-123d-4fd1-8e80-fd26be9101ed', 'Dirección de escuela', now(), now());
+insert into tprofessor values('f884319e-123d-4fd1-8e80-fd26be9101ed', 'Kevin Arnold', 'Arias Figueroa', 'karias@unamba.edu.pe', now(), now());

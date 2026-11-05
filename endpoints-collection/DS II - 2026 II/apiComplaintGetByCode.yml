@@ -1,0 +1,20 @@
+info:
+  name: apiComplaintGetByCode
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{urlBase}}/complaint/getbycode/:code"
+  params:
+    - name: code
+      value: AWY12YG
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

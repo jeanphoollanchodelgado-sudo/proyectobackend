@@ -1,0 +1,28 @@
+info:
+  name: apiComplaintCommentInsert
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{urlBase}}/complaintcomment/insert"
+  body:
+    type: multipart-form
+    data:
+      - name: code
+        type: text
+        value: AWY12YG
+      - name: idUser
+        type: text
+        value: ""
+        disabled: true
+      - name: description
+        type: text
+        value: Buen día, se está revisando su caso.
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

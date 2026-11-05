@@ -1,0 +1,40 @@
+info:
+  name: apiComplaintInsert
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{urlBase}}/complaint/insert"
+  body:
+    type: multipart-form
+    data:
+      - name: idOffice
+        type: text
+        value: f884319e-123d-4fd1-8e80-fd26be9101ed
+      - name: idProfessor
+        type: text
+        value: ""
+        disabled: true
+      - name: complaintFullName
+        type: text
+        value: Kevin Arnold Arias Figueroa
+      - name: personFullName
+        type: text
+        value: Maykol Kerare Carbajal
+      - name: description
+        type: text
+        value: Que el profe se acuerde de mi apellido
+      - name: issueDate
+        type: text
+        value: 2026-06-16
+      - name: files
+        type: file
+        value: []
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
